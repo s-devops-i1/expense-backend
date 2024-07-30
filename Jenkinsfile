@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+  agent {
+      node {
+          label 'ci-server'
+          }
+        }
     stages {
         stage('Example') {
             steps {
