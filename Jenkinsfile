@@ -32,6 +32,20 @@ pipeline {
                 echo 'Hello World'
             }
         }
+    stage('Parallel stage'){
+    parallel{
+    stage('Example3') {
+           steps {
+             echo 'Helloo  World'
+              }
+           }
+     stage('Example4') {
+            steps {
+              echo 'Helloo  World'
+               }
+            }
+     }
+    }
     stage('Example2') {
     when { triggeredBy 'SCMTrigger' }
        steps {
