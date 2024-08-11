@@ -49,7 +49,7 @@ pipeline {
     stage('Example2') {
     when { triggeredBy 'SCMTrigger' }
        steps {
-         echo 'Hey World'
+         echo 'Hey World from scm i.e., git'
          }
       }
      stage('Example3') {
