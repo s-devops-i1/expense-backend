@@ -10,6 +10,7 @@ agent {
  stage('Lint code'){
    steps{
      echo 'Lint code'
+     sh 'env'
     }
    }
  stage('Run Unit Test'){
