@@ -23,9 +23,9 @@ agent {
        echo 'Running Integration test'
       }
      }
-  stage('Sonar Scan'){
+  stage('Sonar Scan Code Review'){
      steps{
-       echo 'Sonar scan'
+       echo 'Sonar scan code review'
       }
      }
   stage('Release Software'){
