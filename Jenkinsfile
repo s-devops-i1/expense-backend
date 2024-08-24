@@ -10,6 +10,7 @@ if(env.TAG_NAME ==~ ".*"){
  stage('Lint code'){
   print 'OK'
   }
+ }
   if(env.BRANCH_NAME != main) {
   stage('Run Unit Test'){
     print 'OK'
@@ -21,7 +22,7 @@ if(env.TAG_NAME ==~ ".*"){
   stage('Sonar Scan Code Review'){
   print 'OK'
   }
- }
+
 }
 
 
