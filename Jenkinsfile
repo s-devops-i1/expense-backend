@@ -1,4 +1,12 @@
 node('ci-server'){
+if(env.TAG_NAME ==~ ".*"){
+ stage('Build Code'){
+  print 'OK'
+  }
+  stage('Release Software'){
+  print 'OK'
+  }
+ }
  stage('Lint code'){
  print 'OK'
  }
@@ -11,16 +19,6 @@ node('ci-server'){
  stage('Sonar Scan Code Review'){
  print 'OK'
  }
- if(env.TAG_NAME ==~ ".*"){
- stage('Build Code'){
-  print 'OK'
-  }
-  stage('Release Software'){
-  print 'OK'
-  }
-
- }
-
 }
 
 
