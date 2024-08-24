@@ -6,18 +6,19 @@ if(env.TAG_NAME ==~ ".*"){
   stage('Release Software'){
   print 'OK'
   }
- }
+ }else {
  stage('Lint code'){
- print 'OK'
- }
- stage('Run Unit Test'){
- print 'OK'
- }
- stage('Run Integration Tet'){
- print 'OK'
- }
- stage('Sonar Scan Code Review'){
- print 'OK'
+  print 'OK'
+  }
+  stage('Run Unit Test'){
+  print 'OK'
+  }
+  stage('Run Integration Tet'){
+  print 'OK'
+  }
+  stage('Sonar Scan Code Review'){
+  print 'OK'
+  }
  }
 }
 
